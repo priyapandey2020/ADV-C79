@@ -2,39 +2,73 @@
 <html>
 <head>
     <title>C79</title>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="main.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+<link rel="stylesheet" href="style.css">
+<script src="main.js"></script>
 </head>
 <body>
-</body>
-</html>
-<center>
-<h3 style="margin-top: 20px; margin-bottom: 20px; ">
-	Menu List of My Restaurant
-</h3>
+    <nav class="navbar-inverse" style="position:sticky;top:0;z-index:99999">
 
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+          <a class="navbar-brand" href="#">Pizzeria</a>
+        </div>
+        
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a href="#view">View Menu</a></li>
+            <li><a href="#add">Add Menu</a></li>
+            <li><a href="#sort">Sort Menu</a></li>
+          </ul>
+        </div>
+    
+    </nav>
+<div class="container">
+    <center>
+    <div class="page-header">
+        <h3 class="text-capitalize text-success" style="margin-top: 20px; margin-bottom: 20px; ">order a pizza</h3>
+    </div>
 
-<div id="display_menu" style="font-weight: bold;"></div>
+<!--Code to View the Menu-->
+    <div id="view" class="bg-primary section_view">
+         <h2 class="text-capitalize">view menu</h2>
+        <img src="pizza_image1.jpg" class="img-responsive"/>
+        <div id="display_menu" style="font-weight: bold;"></div>
 
-<button id="menu_list" onclick="getmenu()">Menu List</button>
+        <button id="menu_list" class="btn btn-info" onclick="getmenu()">Menu List</button>
 
-<p>Add New Menu Item-<input type="text" id="add_item" placeholder="New Menu Item"></p>
-<div id="display_addedmenu" style="font-weight: bold;"></div>
-<button onclick="add_item()" id="additem_button">
-	Add New Menu Item
-</button>
-
+    </div>
+<!--Code to Add the Menu-->
+    <div id="add" class="bg-warning" style="height:600px;">
+        <h2 class="text-capitalize">Add Toppings</h2>
+        <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+        <img src="Pizza-Toppings.jpg" class="img-responsive">
+        </div>
+        <span class="col-lg-7 col-md-7 col-sm-7 col-xs-12">
+        <p>Add Toppings-<input type="text" id="add_item" placeholder="Toppings at your interest"></p>
+        <div id="display_addedmenu" style="font-weight: bold;"></div>
+        <button onclick="add_item()" class="btn btn-Secondary" id="additem_button">Add Toppings to Pizza</button>
+        </span>
+   
+<!--Code to Sort the Menu-->
+    <div id="sort">
+        <button onclick="sorting()" id="sort_button">Sort Item</button>
+        <div id="display_sortedmenu" style="font-weight: bold;"></div>
+    </div>
+    </div>
+    </center>
 </div>
-
-
-<button onclick="sorting()" id="sort_button">
-	Sort Item
-</button>
-<div id="display_sortedmenu" style="font-weight: bold;"></div>
-</center>
-
-<script>
-
-</script>
 </body>
 </html>

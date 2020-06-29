@@ -1,3 +1,7 @@
+body{
+	background: burlywood;
+}
+
 #additem_button,#menu_list
 {
 	margin-top: 20px; 
@@ -14,7 +18,8 @@ input
 {
 	margin: 10px;
 }
-h3{
-	color:green;
-}
 
+.section_view img{
+	width: 60% ;
+	height: 400px;
+}
