@@ -6,8 +6,8 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="style.css">
 <script src="main.js"></script>
 </head>
 
@@ -17,7 +17,6 @@
         <div class="topnav-right">
          <a href="#viewblock">View Menu</a>
          <a href="#addTopings">Add Menu</a>
-         <!-- <a href="#sort">Sort Menu</a> -->
         </div>
     </div>
 
@@ -26,28 +25,26 @@
             <img class="img-responsive"  src="images/pizza.png">
         </div>
         <div class="menu_div">
-            <button id="menu_list" onclick="getmenu()">Menu List</button>
-           <!-- <div id="display_menu"></div> -->
-           <ul id="display_menu"></ul>
+            <button id="menu_list" onclick="getmenu()">Show Menu</button>
+           <div id="display_menu"></div>
         </div>
     </div>
     
     <div class="newRow" id="addTopings">
         <div class="block1">
             <input id="add_item" placeholder="Type here to add toppings?"/></br>
-            <button id="add_toppings" onclick="add_item()" >Add Toppings</button>
+            <button id="add_toppings" onclick="add_item()" >Recommend a new Pizza</button>
         </div>
         <div class="block2">
-            <div id="display_addedmenu"></div>  
-            <button id="sortbtn" onclick="sorting()">Sort Item</button>
+            <div id="display_addedmenu">
+            </div>
         </div>
-        <div class="block2">
-            <div id="display_sortedmenu" ></div>
-        </div>
+        
     </div>
 
     <div>
         <img class="img-responsive"  src="images/topping.png">
     </div>
+
 </body>
 </html>

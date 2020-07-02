@@ -1,6 +1,6 @@
 body{
 	background-image: url("images/Bg.jpg");
-	background-repeat: no-repeat;
+	/* background-repeat: no-repeat; */
 }
 
 .topnav {
@@ -63,27 +63,20 @@ body{
 
   .block1{
 	float: left;
-	width: 30%;
+	width: 20%;
 	padding: 5px;
   }
   .block2{
 	float: left;
-	width: 30%;
-	padding: 20px;
-	color: honeydew;
-	font-size: 25px;
-	font-family: cursive;
-  }
-  .block3{
-	float: right;
-	width: 40%;
-	padding: 70px;
+	width: 80%;
+	padding: 5px;
 	color: honeydew;
 	font-size: 25px;
 	font-family: cursive;
   }
 
   #add_toppings{
+	/* padding-left:30px; */
 	width:200px;
 	height:180px;
 	border: none;
@@ -92,27 +85,12 @@ body{
 	font-size: 25px;
 	font-family: cursive;
   }
-  #sortbtn{
-	display: none;
-	width:fit-content;
-	height:40px;
-	margin-top: 20px;
-	margin-left: 30%;
-	border: none;
-	background-color:#e2062c;
-	color:black;
-	font-size: 25px;
-	font-family: cursive;
-  }
-  #addTopings{
-   padding:30px;
-  }
 
   #add_item {
 	font-family: cursive;
 	font-size: 15px;
 	line-height: 20px;
-	width: 40%;
+	width: 80%;
 	height: 50px;
 	color: #fff;
     background: none;
@@ -128,9 +106,27 @@ body{
 	color: white;
  }
 
-#sort_button
+ol.menulist>li
 {
-	display: none;
-	margin-top: 20px; 
-	margin-bottom: 20px; 
+	padding-bottom:20px;
+}
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+ }
+ 
+ div.card {
+    flex: 0 0 30%;
+	box-sizing: border-box;
+	color:black;
+	margin: 0.5rem .18em;
+	background-color: antiquewhite;
+	align-items: center;
+	font-size: medium;
+}
+.card img{
+	width:100px;
+	height: 80px;
 }
